@@ -153,6 +153,10 @@ body {
     align-items: center;
 }
 
+.logoprojects #experience {
+    color: black;
+}
+
 .logoprojects img {
     height: 85px;
     margin-right: 20px;
