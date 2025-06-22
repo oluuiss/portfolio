@@ -9,34 +9,190 @@
 </head>
 <body>
     <!-- navbar -->
-    <section class="container-navbar">
-        <div class="container-navbar-left">
-            <div class="container-navbar-left-macos">
+    <section class="container-navbar" id="navnav">
+        <div class="container-navbar-left reveal">
+            <div class="container-navbar-left-macos reveal">
                 <img id="pasta" src="assets/pasta.svg" alt="">
                 <h1>Porfólio Luis</h1>
                 <p>File</p>
                 <p>Edit</p>
             </div>
-            <div class="container-navbar-left-macwin">
+            <div class="container-navbar-left-macwin reveal">
                 <img src="assets/macclose.svg" alt="Close">
                 <img src="assets/macminimize.svg" alt="Minimize">
                 <img src="assets/macfull.svg" alt="Fullscreen">
             </div>
         </div>
-        <div class="container-navbar-right">
-            <b><a href="#projects">Projects</a></b>
-            <b><a href="#experience">Experience</a></b>
-            <b><a href="#education">Education</a></b>
-            <b><a href="#about">About</a></b>
-            <b><a href="#skills">Skills</a></b>
+        <div class="container-navbar-right reveal">
+            <b><a href="#projects" class="navtexts">Projects</a></b>
+            <b><a href="#experience" class="navtexts">Experience</a></b>
+            <b><a href="#education" class="navtexts">Education</a></b>
+            <b><a href="#about" class="navtexts">About</a></b>
+            <b><a href="#skills" class="navtexts">Skills</a></b>
+        </div>
+                <!-- Botão Hamburger (visível apenas no mobile) -->
+        <div class="hamburger" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+
+        <!-- Navbar Mobile (esconde no desktop) -->
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="#education">Education</a>
+            <a href="#aboutid">About</a>
+            <a href="#skillsid">Skills</a>
         </div>
     </section>
     <!-- inicio -->
     <section class="container-header">
-        <div class="container-header-center">
+        <div class="container-header-center reveal">
                 <h1>Backend Developer</h1>
                 <h2>Luis Gustavo da Silva Porto</h2>
-            <div class="container-header-center-social">
+            <div class="container-header-center-social reveal">
+                <div class="container-header-center-social-imgs reveal">
+                  <a href="https://github.com/oluuiss" target="_blank"><img src="assets/logogithub.svg" title="GitHub" alt="GitHub"></a>
+                </div>
+                <div class="container-header-center-social-imgs reveal">
+                     <a href="https://www.linkedin.com/in/oluuiss/" target="_blank"><img src="assets/logolinkedin.svg" title="Linkedin" alt="GitHub"></a>
+                </div>
+                <div class="container-header-center-social-imgs reveal">
+                    <a href="https://wa.me/5517996354275?text=Oii%2C%20Luis%21%20Vim%20pelo%20seu%20portf%C3%B3lio " target="_blank"><img src="assets/logomail.svg" title="Email" alt="Email"></a>
+                </div>
+            </div>
+            <div class="container-header-center-button reveal">
+                    <button>
+                        <a href="/assets/curriculo.pdf" target="_blank"><img src="/assets/download.svg" alt="Download"> Download CV</a>
+                    </button>
+            </div>
+        </div>
+    </section>
+    <!-- projetos -->
+    <section class="container-projects" id="projects">
+        <div>
+            <div class="logohashs">
+                <img src="assets/logoprojects.svg" alt="Projects">
+                <h1>Projects</h1>
+            </div>
+            <div class="container-projects-cards reveal">
+                <!-- projeto 1 -->
+                <div class="container-projects-cards-card reveal">
+                    <img src="assets/project1.svg" alt="Projeto 1" class="project-image">
+                    <h3 class="project-name reveal">CRUD (Create, Read, Update, Delete)</h3>
+                    <p class="project-description reveal">Registration, search, editing and removal of users in Java using JDBC database.</p>
+                    <a href="https://github.com/oluuiss/crud" target="_blank" class="project-button reveal">GitHub</a>
+                </div>
+                <!-- projeto 2 -->
+                <div class="container-projects-cards-card reveal">
+                    <img src="assets/project2.svg" alt="Projeto 2" class="project-image reveal">
+                    <h3 class="project-name reveal">Outback Reproduction</h3>
+                    <p class="project-description reveal">Outback Playback with Login, Auth0, Persistence, DB and Payment Gateway.</p>
+                    <a href="https://github.com/oluuiss/demo-outback" target="_blank" class="project-button reveal">GitHub</a>
+                </div>
+                <!-- projeto 3 -->
+                <div class="container-projects-cards-card reveal">
+                    <img src="assets/project3.svg" alt="Projeto 3" class="project-image reveal">
+                    <h3 class="project-name reveal">Website for local business</h3>
+                    <p class="project-description reveal">Group project developed for a local company with the aim of increasing customer reliability. HTML, CSS e JavaScript.</p>
+                    <a href="https://github.com/oluuiss/web-site-for-enterprise" target="_blank" class="project-button reveal">GitHub</a>
+                </div>
+            </div>
+        </div> 
+    </section>
+    <section class="container-experience" id="experience">
+        <div class="logohashs">
+            <img class="reveal" src="assets/logoexperience.svg" alt="Experience">
+            <h1 class="reveal" id="experienceid">Experience</h1>
+        </div>
+        <div class="about-experience reveal">
+            <p>
+                I currently don't have professional experience and am seeking my first internship in the technology field. I believe I meet the qualifications for the Internship Program and am available for an interview, where I can provide more details about my professional profile. I have experience in development projects where I applied knowledge in Java, Spring Boot, and other relevant technologies. I'm always willing to learn and contribute to the team's success.
+            </p>
+        </div>
+    </section>
+    <section class="container-education reveal" id="education">
+            <div class="logohashs">
+                <img class="reveal" src="assets/logoeducation.svg" alt="Education">
+                <h1 class="reveal" id="educationid">Education</h1>
+            </div>
+            <div class="container-education-content reveal">    
+                <div class="education-item reveal">
+                    <h3>Computer Engineering</h3>
+                    <p>Centro Universitário de Votuporanga (UNIFEV)</p>
+                    <p>2024 - 2028</p>
+                    <p>Bachelor's degree</p>
+                </div>
+            </div>
+            <div class="logohashs">
+                <img class="reveal" src="assets/logocertifications.svg" alt="Education">
+                <h1 class="reveal" id="education">Certifications</h1>
+            </div>
+            <div class="container-certification-content reveal">  
+                <a class="acertification reveal" target="_blank" title="Driver Certification - JPEG
+Web Programmer with emphasis on PHP and Java
+Via Certa Cursos - Fernandópolis
+2021 - 2022 / 121 Horas
+Course" href="https://drive.google.com/file/d/1h3GONblORzY8WXS76wM0N02nvdhYxcij/view?usp=sharing">
+                    <div class="certification-item reveal">
+                        <h3>Web Programmer with emphasis on PHP and Java</h3>
+                        <p>Via Certa Cursos - Fernandópolis</p>
+                        <p>2021 - 2022 / 121 Horas</p>
+                        <p>Course</p>
+                    </div>
+                </a>
+            </div>  
+    </section>
+    <section class="container-about reveal" id="about">
+            <div class="logohashs">
+                <img class="reveal" src="assets/logoabout.svg" alt="About Me">
+                <h1 class="reveal" id="aboutid">About me</h1>
+            </div>
+            <div class="about-experience reveal">
+            <p>
+                Computer Engineering Student, I’ve always been passionate about technology and programming. From an early age, I’ve been fascinated by how things work behind the screens, which led me to explore software development. For the past 3 years, I’ve been studying and practicing programming, with a focus on Java and Spring Boot. My passion for problem-solving and building efficient solutions drives me to constantly seek new challenges and learning opportunities.
+            </p>
+        </div>
+            <p class="getintouch reveal" id="getintouch">
+                <a class="reveal" href="#navnav">Get in touch &rsaquo;</a>
+            </p>
+    </section>
+      <section class="container-skills reveal" id="skills">
+        <div class="logohashs">
+            <img class="reveal" src="assets/logoskills.svg" alt="Skills">
+            <h1 class="reveal" id="skillsid">Skills</h1>
+        </div>
+        <div class="container-skills-content reveal">
+            <div class="skills-languages reveal">
+                <div class="containerlanguage" id="c">
+                    <img src="assets/c.svg" class="lgc reveal" alt="C">
+                    <h2 class="reveal">C</h2>
+                </div>
+                <div class="containerlanguage" id="spring">
+                    <img src="assets/spring.svg" class="lgc reveal" alt="spring">
+                    <h2 class="reveal">Spring</h2>
+                </div>
+                <div class="containerlanguage" id="java">
+                    <img src="assets/java.svg" class="lgc reveal" alt="java">
+                    <h2 class="reveal">Java</h2>
+                </div>
+                <div class="containerlanguage" id="golang">
+                    <img src="assets/golang.svg" class="lgc reveal" alt="golang">
+                    <h2 class="reveal">GoLang</h2>
+                </div>
+                <div class="containerlanguage" id="swift">
+                    <img src="assets/swift.svg" class="lgc reveal" alt="swift">
+                    <h2 class="reveal">Swift</h2>
+                </div>
+            </div>
+            <div class="skills-platforms reveal">
+                <h3 id="plat">MacOS / Windows / Ubuntu</h3>
+            </div>
+        </div>
+    </section>
+    <section class="container-bottom-social" id="navnavs">
+        <div id="bottom" class="container-header-center-social">
                 <div class="container-header-center-social-imgs">
                   <a href="https://github.com/oluuiss" target="_blank"><img src="assets/logogithub.svg" title="GitHub" alt="GitHub"></a>
                 </div>
@@ -46,51 +202,14 @@
                 <div class="container-header-center-social-imgs">
                     <a href="https://wa.me/5517996354275?text=Oii%2C%20Luis%21%20Vim%20pelo%20seu%20portf%C3%B3lio " target="_blank"><img src="assets/logomail.svg" title="Email" alt="Email"></a>
                 </div>
-            </div>
-            <div class="container-header-center-button">
-                    <button>
-                        <a href="/assets/curriculo.pdf" target="_blank"><img src="/assets/download.svg" alt="Download"> Download CV</a>
-                    </button>
-                </div>
         </div>
+        <p id="autoral">© 2025 Luis Gustavo da Silva Porto. All rights reserved.</p>
     </section>
-    <!-- projetos -->
-    <section class="container-projects" id="projects">
-        <div>
-            <div class="logoprojects">
-                <img src="assets/logoprojects.svg" alt="Projects">
-                <h1>Projects</h1>
-            </div>
-            <div class="container-projects-cards">
-                <!-- projeto 1 -->
-                <div class="container-projects-cards-card">
-                    <img src="assets/project1.svg" alt="Projeto 1" class="project-image">
-                    <h3 class="project-name">CRUD (Create, Read, Update, Delete)</h3>
-                    <p class="project-description">Cadastro, pesquisa, edição e remoção de usuários em Java utilizando banco de dados JDBC.</p>
-                    <a href="https://github.com/oluuiss/crud" target="_blank" class="project-button">Ver Projeto</a>
-                </div>
-                <!-- projeto 2 -->
-                <div class="container-projects-cards-card">
-                    <img src="assets/project2.svg" alt="Projeto 2" class="project-image">
-                    <h3 class="project-name">Reprodução Outback</h3>
-                    <p class="project-description">Reprodução Outback com Login, Auth0, Persistence, DB e Gateway de pagamento.</p>
-                    <a href="https://github.com/oluuiss/demo-outback" target="_blank" class="project-button">Ver Projeto</a>
-                </div>
-                <!-- projeto 3 -->
-                <div class="container-projects-cards-card">
-                    <img src="assets/project3.svg" alt="Projeto 3" class="project-image">
-                    <h3 class="project-name">Site para empresa local</h3>
-                    <p class="project-description">Projeto em grupo desenvolvido para uma empresa local com o objetivo de aumentar a confiabilidade dos clientes. HTML, CSS e JavaScript.</p>
-                    <a href="https://github.com/oluuiss/web-site-for-enterprise" target="_blank" class="project-button">Ver Projeto</a>
-                </div>
-            </div>
-        </div> 
-    </section>
-    <section class="container-experience">
-        <div class="logoprojects">
-            <img src="assets/logoexperience.svg" alt="Experience">
-            <h1 id="experience">Experience</h1>
-        </div>
-    </section>
+    <button id="btnTopo" class="btn-topo" title="Voltar ao topo">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#ffffff" viewBox="0 0 24 24">
+            <path d="M12 2l-10 10h6v10h8v-10h6z"/>
+        </svg>
+    </button>
+    <script src="script.js"></script>
 </body>
 </html>
