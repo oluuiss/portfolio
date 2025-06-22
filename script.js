@@ -40,7 +40,7 @@ function toggleMenu() {
         menu.style.display = (menu.style.display === 'flex') ? 'none' : 'flex';
     }
 
-    // Fecha o menu ao clicar fora (opcional)
+    // Fecha o menu ao clicar fora
     document.addEventListener('click', function(e) {
         const menu = document.getElementById('mobileMenu');
         const hamburger = document.querySelector('.hamburger');
