@@ -592,6 +592,15 @@ body {
     .project-button {
         font-size: 14px;
     }
+
+    #navnavs {
+        overflow-y: hidden;
+        height: 30vh;
+    }
+
+    #autoral {
+        padding-bottom: 5vh;
+    }
 }
 
 /* Ajustes para resoluções entre 769px e 1440px */
