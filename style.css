@@ -516,12 +516,13 @@ body {
     display: none;
     flex-direction: column;
     align-items: center;
-    background: linear-gradient(180deg, #000000, #312fb180);
+    background: linear-gradient(180deg, #1f1e77, #00000054);
     position: absolute;
     top: 90px;
-    left: 0;
-    width: 100%;
+    right: 0;
+    width: 30%;
     z-index: 1000;
+    border-bottom-left-radius: 30px;
 }
 
 .mobile-menu a {
@@ -531,7 +532,7 @@ body {
     font-size: 20px;
     width: 100%;
     text-align: center;
-    border-top: 1px solid rgba(255,255,255,0.1);
+    border-top: 1px linear-gradient(180deg, #1f1e77, #ffffff80);
 }
 
 .mobile-menu a:hover {
@@ -553,12 +554,12 @@ body {
     .hamburger {
         display: flex;
         position: absolute;
-        left: 50%;
+        right: 5%;
         transform: translateX(-50%);
     }
 
     .container-header-center h1 {
-        font-size: 40px;
+        font-size: 70px;
         padding: 0 15px;
     }
 
