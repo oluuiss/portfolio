@@ -585,6 +585,7 @@ body {
     .acertification {
         width: 90%;
         font-size: 18px;
+        margin-left: 0px;
     }
 
     .project-description {
