@@ -648,4 +648,8 @@ body {
     #autoral {
         font-size: 18px;
     }
+
+    #certif {
+        padding-bottom: 10vh;
+    }
 }
